@@ -15,6 +15,8 @@ export const moveForward = (position, direction) => {
         case 'W':
             newPos.x = Math.max(0, position.x - 1);
             break;
+        default:
+            console.error(`Invalid direction: ${direction}`);
     }
     return newPos;
 };
